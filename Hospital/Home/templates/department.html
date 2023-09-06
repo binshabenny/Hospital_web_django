@@ -1,12 +1,24 @@
 {% extends "base.html" %}
+{% load static %}
 {% block title%}department{% endblock %}
 {% block content%}
-<h1>Our Deaprtments</h1>
-<hr>
-{% for d in dept %}
-<div class="mx-auto w-75 bg-success text-center text-white p-3 my-5 border-warning rounded">
-    <h1>{{d.dep_name}}</h1></Department>
-    <p>{{d.dep_description}}</p>
-    {% endfor %}
-</div>
-{% endblock %}
+<h1 class="text-center">Our Deaprtments</h1>     
+
+<div class="container">
+    <div class="row">
+        {% for d in dept %} 
+        <div class="col-sm-4 mb-3">
+                    <div class="card" style="width: 18rem;">
+                       
+                       <img src= "{{ d.dep_img.url }}" class="card-img-top" alt="..." style="height: 22em">
+                    
+                       <div class="card-body">
+                        <h5 class="card-title">{{d.dep_name}}</h5>
+                        <p class="card-text">{{d.dep_description}}</p>
+                       </div>
+                     
+                    </div>
+                </div>
+            {% endfor %}
+            {% endblock %}
+           
