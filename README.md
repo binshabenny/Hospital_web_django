@@ -12,12 +12,12 @@ This is a Hospital Management Web Application built using Python Django. It allo
 - **Appointment Booking**: Patients can book their appointments through the website.
 
 
-Usage
+## Usage
 Visit the website to explore hospital departments and doctors.
 Patients can register and log in to book appointments.
 Admins can log in to the admin panel at /admin to manage hospital data.
 
-Technologies Used
-Python Django
-HTML/CSS
-JavaScript
+## Technologies Used
+- **Python Django
+- **HTML/CSS
+- **JavaScript
