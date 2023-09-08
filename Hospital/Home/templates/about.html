@@ -1,5 +1,42 @@
 {% extends "base.html" %}
+{% load static %}
 {% block title%}about{% endblock %}
 {% block content%}
-<h1>About PAGE</h1>
+<h1 class="text-center">ABOUT CITY HOSPITAL</h1>
+<hr>
+<p class="lead text-danger">
+A one-stop multi super specialty hospital that will take care of all your health and medical needs.<br>
+ City Hospital, come up with an expert insight into health services has set highest standards for quality and care to ensure top-notch healthcare experience.
+</p>
+<p>
+    The hospital designed and conceived in a different way sprawls in Three acres of land adjacent to National Highway, between Palarivattom and Mamangalam, Cochin.
+    <br>City Hospital houses more than Forty departments, Envisaged to be a 500 patient bedded hospital Renai Medicity has world class Operation Theatres, 11 separate Intensive Care Units, multiple Cath Labs, State-of-the-art chest pain centre, 24-Hour Accident & Emergency care unit, most modern radiological equipment, 24 Hour Pharmacies and clinical Laboratories, centrally air conditioned Rooms, Suites and Wards, Multiple Restaurants, ample car parking facilities and more
+</p>
+<br>
+<p>
+    Upholding the motto of quality healthcare, adopting state-of-the-art equipment and bringing together most modern facilities, City Hospital redefines the healthcare scenario of Kerala. Our vision is to assure comprehensive and affordable healthcare for all. Renowned specialists along with well-trained paramedical staff ensure a top-quality healthcare experience. From diagnosis to analysis, each phase of treatment is bestowed with utmost care and dedication.
+</p>
+
+
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{% static '/images/a1.jpeg'%}" class="d-block w-100"  alt="Responsive image">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static '/images/a3.jpeg'%}" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static '/images/aa2.jpeg'%}" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
 {% endblock %}
